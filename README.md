@@ -1,7 +1,7 @@
 #PORTFOLIO MOBILE FIRST (one page)
 Thanks to BEDIMCODE for youtube tutorial
 
-(Only Front End)
+(Only Front End):
 
 - HTML / CSS
 - REVEAL.JS
