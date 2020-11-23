@@ -5,4 +5,5 @@ Thanks to BEDIMCODE for youtube tutorial
 
 - HTML / CSS
 - REVEAL.JS
-- Mobile first with rem method
+- Mobile first with responsive "rem method"
+- BEM CSS method
