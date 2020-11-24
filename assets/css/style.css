@@ -18,13 +18,16 @@
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
+    --h3-font-size: 1.6rem;
     --normal-font-size: 0.938rem;
 }
 
+/* ===== ROOT MEDIA QUERIES ===== */
 @media screen and (min-width: 768px){
     :root{
         --big-font-size: 3.5rem;
         --h2-font-size: 2rem;
+        --h3-font-size: 1.6rem;
         --normal-font-size: 1rem;
     }
 }
@@ -108,7 +111,7 @@ img{
     padding-bottom: 2rem;
 }
 
-/* ===== CSS CLASS ===== */
+/* ===== CSS DISPLAY ===== */
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -128,6 +131,19 @@ img{
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
+/* Buttons */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+}
+.button:hover{
+    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+}
+
 /* ===== NAV ===== */
 
 .nav{
@@ -136,18 +152,6 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
-}
-@media screen and (max-width: 768px){
-    .nav__menu{
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: var(--second-color);
-        transition: .5s;
-    }
 }
 .nav__item{
     margin-bottom: var(--mb-4);
@@ -226,19 +230,6 @@ img{
     right: 0;
     bottom: 0;
     width: 295px;
-}
-
-/* Buttons */
-.button{
-    display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
-    padding: .75rem 2.5rem;
-    font-weight: var(--font-semi);
-    border-radius: .5rem;
-}
-.button:hover{
-    box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
 }
 
 /* ===== ABOUT ===== */
@@ -358,7 +349,6 @@ img{
     color: #fff;
     text-align: center;
     font-weight: var(--font-semi);
-    padding: 2rem 0;
 }
 .footer__title{
     font-size: 2rem;
